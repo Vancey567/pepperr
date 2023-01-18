@@ -7,7 +7,7 @@ const app = express();
 const dbConnect = require('./Database/database');
 const updateRoute = require('./Routes/updateRoutes');
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8800;
 const USER = process.env.USER;
 const PASSWORD = process.env.PASSWORD;
 const URL = process.env.MONGOURI || `mongodb+srv://${USER}:${PASSWORD}@pepper.az7awhd.mongodb.net/?retryWrites=true&w=majority`
