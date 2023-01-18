@@ -1,0 +1,73 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-image > img {
+  /* width: 25%; */
+  /* margin-right: 20px; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.shadow-div {
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  width: 120px;
+  height: 50px;
+  background: linear-gradient(
+    270deg,
+    #b8b8b8 0%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 0%,
+    #ffffff 90%
+  );
+}
+
+.shadow-div1 {
+  position: absolute;
+  right: 0px;
+  width: 120px;
+  height: 50px;
+  bottom: -5px;
+  background: linear-gradient(
+    90deg,
+    #b8b8b8 0%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 0%,
+    #ffffff 90%
+  );
+}
+
+img {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .carousel-image {
+    width: 50%;
+  }
+
+  .shadow-div {
+    left: -100px;
+    width: 8rem;
+    height: 50px;
+    top: 0;
+  }
+
+  .shadow-div1 {
+    right: -100px;
+    width: 8rem;
+    height: 50px;
+    bottom: 0;
+  }
+}

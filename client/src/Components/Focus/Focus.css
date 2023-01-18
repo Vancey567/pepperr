@@ -1,0 +1,34 @@
+.focus-container {
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    background-color: #151531;
+    padding: 6rem 18rem;
+    border-radius: 30px;
+}
+
+.focus-details {
+    color: #fff;
+    width: 22rem;
+}
+
+.focus-buttons button:last-of-type {
+    border: 1px solid #fff;
+    margin: 0 0 0 1rem;
+}
+  
+@media screen and (max-width: 1050px) {
+    .focus {
+        padding: 2rem 2rem;
+        border-radius: 30px;
+    }
+
+    .focus-details {
+        color: #fff;
+        width: 16rem;
+    }
+}

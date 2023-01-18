@@ -1,0 +1,27 @@
+.reviewCard-container {
+    box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+    border-radius: 30px;
+    background-color: #fff;
+    width: 20rem;
+    height: 10rem;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    text-align: left;
+    padding: 2rem;
+    color: #151531;
+}
+
+.review {
+    margin: .6rem 0;
+    color: #151531;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+.designation {
+    font-size: .8rem;
+}

@@ -1,0 +1,151 @@
+.navbar-container {
+    height: 10vh;
+    padding: 0 5rem;
+}
+
+.login-btn {
+    border: 2px solid #9D0AFF;
+    color: #9D0AFF;
+    background-color: transparent;
+    margin-right: 1rem;
+}
+
+.login-btn:hover {
+    border: none;
+    background-color: #9D0AFF;
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.loginAndStarted:first-child {
+    border: 1px solid red;
+}
+
+.cart {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.cart > img {
+    margin-right: 10px;
+}
+
+.nav-links > a > div {
+    color: #000;
+}
+
+.cartName {
+    color: #9D0AFF;
+    margin-left: 0rem;
+}
+
+.cart:hover {
+    color: #400369;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links > a {
+    margin: 0 10px;
+}
+
+.right-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+
+.open {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    height: 90vh;
+    width: 70%;
+    transition: all;
+    animation-name: hamburger;
+    animation-duration: 1s;
+}
+
+.close {
+    display: none;
+}
+
+.hamburger-links > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger-links > a > div {
+    margin: 40px 0;
+}
+
+
+/* Animations */
+@keyframes hamburger {
+    0% { opacity: 0 }
+    30% { opacity: 30 }
+    50% { opacity: 50 }
+    75% { opacity: 75 }
+    100% { opacity: 100 }
+}
+.open  {
+    animation-name: hamburger;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+/* Mobile */
+@media screen and (min-width: 799px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger-menu {
+        display: none;
+    }
+
+    .loginAndStarted {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .loginAndStarted {
+        display: none;
+    }
+    .navbar-container {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,137 @@
+.financial-container {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.financial {
+    background-color: #151531;
+    padding: 6rem 18rem;
+    border-radius: 30px;
+}
+
+.financial-numbers {
+    background: rgba(255, 250, 255, 0.1);
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.financial-numbers {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.widgets {
+    padding-right: .9rem;
+    border-right: 1px solid #6c6c6cd4;
+
+}
+
+.features-out {
+    padding-left: .9rem;
+    border-left: 1px solid #6c6c6cd4;
+}
+
+.financial-numbers span {
+    display: block;
+}
+
+.financial-details {
+    color: #fff;
+    width: 25rem;
+}
+
+.financial-details > p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.financial-buttons button:last-of-type {
+    border: 1px solid #fff;
+    margin: 0 0 0 1rem;
+}
+  
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 13.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .financial {
+        padding: 1rem 1rem;
+        border-radius: 30px;
+        max-width: 400px;
+    }
+
+    .financial-details{
+        width: 20rem;
+    }
+
+    .financial-container {
+        
+    }
+
+    .financial-details > p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        max-width: 20rem;
+    }
+
+    .financial-numbers {
+        width: 100%;
+        height: 18rem;
+        display: block;
+        border-radius: 30px;
+        line-height: 36px;
+        padding: 0.5rem 0 0;
+    }
+
+    /* .widgets.integrations.features-out > h1 {
+        font-size: 28px;
+    } */
+
+    /* .widgets h1, .integrations h1, .features-out h1 {
+        font-size: 28px;
+    } */
+    
+    .widgets:first-child, .integrations:first-child, .features-out:first-child {
+    }
+    
+    .number {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .financial-items {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .financial-items:last-child {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(255, 250, 255, 0.8);
+    }
+}
+

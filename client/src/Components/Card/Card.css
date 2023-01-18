@@ -1,0 +1,33 @@
+.card-container {
+  width: 300px;
+  height: 200px;
+  box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(147, 61, 251);
+  color: #fff;
+  height: auto;
+  width: 23px;
+  padding: 6px 8px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+}

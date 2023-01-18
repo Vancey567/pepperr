@@ -1,0 +1,42 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-description > h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.features-description {
+    height: 16rem;
+    width: 35rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+    .features-description {
+        height: 10rem;
+    }
+
+    .features-description > h1{
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+
+    .features-description > p{
+        font-size: 12px;
+        
+    }
+}

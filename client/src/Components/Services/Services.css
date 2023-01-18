@@ -1,0 +1,104 @@
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem 5rem;
+  position: relative;
+}
+
+.customer-services {
+  display: flex;
+  box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+  border-radius: 30px;
+}
+
+.read-more {
+  flex: 3 4;
+  padding: 0 6rem 0 0;
+  text-align: left;
+}
+
+.read-more > h1 {
+  font-family: Plus Jakarta Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+.read-more > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.services-card-container {
+  width: 270px;
+  height: 170px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(147, 61, 251);
+  color: #fff;
+  height: auto;
+  width: 23px;
+  padding: 6px 8px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.community {
+  left: 900px;
+  right: 0px;
+  top: 149.48px;
+  background: #ffffff;
+  box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    display: block;
+    margin: 0;
+  }
+
+.read-more {
+    padding: 1.2rem;
+    text-align: left;
+}
+
+.read-more > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+}

@@ -1,0 +1,83 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0 0 1rem 0;
+  transition: 2s;
+
+}
+
+.single-carousel {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+    border-radius: 100px;
+    padding: .5rem 1rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    transition: 2s;
+}
+
+
+.slick {
+  height: 20rem;
+  width: 20rem;
+}
+
+
+
+/* .feature-carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0 0 1rem 0;
+  max-width: 100%; 
+  transform: translateX(-50%);
+}
+
+.bottom-carousel {
+  margin: 0 0 0 10rem;
+  overflow: hidden;
+  max-width: 100%;
+} */
+
+@media (max-width: 800px) {
+  .carousel-container {
+    flex-direction: row;
+  }
+  .carousel,
+  .bottom-carousel {
+    width: 80%;
+    margin: 0;
+  }
+  .single-carousel {
+    width: 20%;
+  }
+  .bottom-carousel {
+    margin-top: 2rem;
+  }
+}

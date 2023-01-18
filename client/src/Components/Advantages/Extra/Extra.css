@@ -1,0 +1,36 @@
+.extra-heading {
+    font-weight: 700;
+    font-size: 40px;
+    color: #151531;
+    margin: 0;
+
+}
+
+.extra-description {
+    width: 400px;
+    height: 260px;
+}
+
+.options span {
+    display: block;
+}
+
+.options {
+    display: flex;
+    align-items: center; 
+}
+
+.options-img {
+    padding: .2rem .5rem 0 0;
+}
+
+.options-description {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+
+/* .extra-desc {
+
+} */
