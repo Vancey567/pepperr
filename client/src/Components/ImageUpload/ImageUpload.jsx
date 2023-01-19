@@ -64,7 +64,9 @@ const ImageUpload = ({imageData}) => {
         </label> */}
         <Button value="Update" color="#9D0AFF" />
       </form>
-      <img className="image-preview" src={image || url+image} alt="logo" />
+      {
+        image && <img className="image-preview" src={image || url+image} alt="logo" />
+      }
 
       {
         notification && <div><p>{notification}</p></div>
