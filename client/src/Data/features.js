@@ -9,7 +9,7 @@ export const features = [
     {
         name: 'feature',
         icon: EmailOutlinedIcon,
-        title: 'Email Management',
+        title: 'Email Managementt',
         body: 'Vitae massa euismod enim dictum facilisi aliquam, elit, pretium. Id laoreet suscipit vel sagittis non commodo semper.'
     },
     {
