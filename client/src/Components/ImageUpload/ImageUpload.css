@@ -4,3 +4,8 @@
     outline: none;
     margin: 2rem 1.2rem;
 }
+
+.image-preview {
+    height: 10rem;
+    width: auto;
+}

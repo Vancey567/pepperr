@@ -6,32 +6,23 @@ import './ImageUpload.css';
 const url = process.env.REACT_APP_BASE_URL;
 
 const ImageUpload = ({imageData}) => {
-  // console.log({imageData});
-  console.log(url + imageData);
   const [image, setImage] = useState(imageData);
+  const [imagePrev, setImagePrev] = useState();
+  const [notification, setNotification] = useState('');
 
   function captureImage(e) {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onloadend = function () {
+      console.log(reader.result);
       setImage(reader.result);
     };
   }
 
-  // useEffect(() => {
-  //   console.log("Uploaded")
-  // }, [image])
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const id = localStorage.getItem("id");
-
-    // fetch(`${url}/admin/image/${id}`, {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ image }),
-    // })
 
     try {
       const res = await fetch(`${url}/admin/image/${id}`, {
@@ -41,19 +32,22 @@ const ImageUpload = ({imageData}) => {
       })
 
       const data = await res.json();
-      console.log(data.doc.image)
-      setImage(data.doc.image);
+      setNotification("Image Updated Successfully!!");
+      // setImage(data.doc.image);
+      setImage("");
+      setImagePrev(data.doc.image);
     } catch (error) {
       console.log(error);
     }
-    // .then((data) => {
-    //   console.log(data)
-    //   setImage(data.doc.image);
-    // })
-    // .catch((error) => {
-    //   console.log(error);
-    // });
   };
+
+  useEffect(() => {
+    if(notification) {
+      setTimeout(() => {
+        setNotification(null);
+      }, 3000)
+    }
+  }, [notification])
 
   return (
     <div className="header-update-container">
@@ -70,7 +64,12 @@ const ImageUpload = ({imageData}) => {
         </label> */}
         <Button value="Update" color="#9D0AFF" />
       </form>
-      <img src={`${url+image}`} alt="logo" />
+      <img className="image-preview" src={image || url+image} alt="logo" />
+
+      {
+        notification && <div><p>{notification}</p></div>
+      }
+      
     </div>
   );
 };

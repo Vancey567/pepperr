@@ -12,6 +12,7 @@ const AdminPanel = () => {
   const [heading, setHeading] = useState("");
   const [imageData, setImageData] = useState("");
   const [count, setCount] = useState(0);
+  const [notification, setNotification] = useState('');
 
   const handleChange = (value) => {
     setHeading(value);
@@ -49,12 +50,20 @@ const AdminPanel = () => {
     
     try {
       const updatedData = await fetch(`${url}/admin/heading`, requestOptions)
-      console.log(updatedData);
+      setNotification("Heading Updated Successfully!!");
       setHeading('');
     } catch (err) {
       console.error(err);
     }
   };
+
+  useEffect(() => {
+    if(notification) {
+      setTimeout(() => {
+        setNotification(null);
+      }, 3000)
+    }
+  }, [notification])
 
   return (
     <div className="admin-panel-container">
@@ -71,6 +80,9 @@ const AdminPanel = () => {
             <Button value="Update" color="#9D0AFF" />
         </form>
         <ImageUpload imageData={imageData}/>
+        {
+        notification && <div><p>{notification}</p></div>
+      }
       </div>
     </div>
   );
