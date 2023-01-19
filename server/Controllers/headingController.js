@@ -1,5 +1,4 @@
 const PepperModel = require('../models/pepper-model');
-const imageUploadService = require('../Services/imageUploadService');
 
 class HeadingController {
     createPepperDoc = async (req, res) =>  {
