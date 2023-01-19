@@ -67,7 +67,6 @@ const ImageUpload = ({imageData}) => {
       {
         image && <img className="image-preview" src={image || url+image} alt="logo" />
       }
-
       {
         notification && <div><p>{notification}</p></div>
       }

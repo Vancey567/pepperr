@@ -4,8 +4,8 @@ import './RequestDemoCount.css';
 const RequestDemoCount = ({count}) => {
   return (
     <div className="demoCount">
-        <span><p>Demo Requests Count: </p></span>
-        <span><p>{count}</p></span>
+        <span><h1>Demo Requests Count: </h1></span>
+        <span><h1>{count}</h1></span>
     </div>
   )
 }
