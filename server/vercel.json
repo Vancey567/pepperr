@@ -7,12 +7,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/",
-        "use": "@vercel/npm",
-        "config": {
-          "buildCommand": "npm run build",
-          "output": "dist"
-        }
+        "dest": "/"
       }
     ]
   }
