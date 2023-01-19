@@ -1,6 +1,7 @@
 if(process.env.NODE_ENV !== 'production')
     require("dotenv").config();
 
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -14,7 +15,7 @@ const PASSWORD = process.env.PASSWORD;
 const URL = process.env.MONGOURI || `mongodb+srv://${USER}:${PASSWORD}@pepper.az7awhd.mongodb.net/?retryWrites=true&w=majority`
 
 dbConnect(URL);
-// app.use('/images', express.static('images'));
+app.use('/images', express.static('images'));
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cors({

@@ -3,7 +3,7 @@ import './Logo.css';
 
 import footerLogo from "../../images/footer-logo.png";
 
-const url = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+const url = process.env.REACT_APP_BASE_URL;
 
 const Logo = ({section}) => {
   const [logo, setLogo] = useState('')

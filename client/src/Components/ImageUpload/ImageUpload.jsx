@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 import './ImageUpload.css';
 
-const url = process.env.REACT_APP_BASE_URL || "http://localhost:5000";
+const url = process.env.REACT_APP_BASE_URL;
 
 const ImageUpload = ({imageData}) => {
   // console.log({imageData});

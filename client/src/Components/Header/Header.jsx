@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Button from '../Button/Button';
-import Detail from '../Detail/Detail';
 
 import hero from '../../images/hero.png';
 import './Header.css';
 
-const url = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+const url = process.env.REACT_APP_BASE_URL;
 
 const Header = () => {
   const [data, setData] = useState({});

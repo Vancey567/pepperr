@@ -5,8 +5,8 @@ import RequestDemoCount from "../RequestDemoCount/RequestDemoCount";
 
 import './AdminPanel.css';
 
-const url = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
-console.log("process", process.env.REACT_APP_BASE_URL)
+// const url = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+const url = process.env.REACT_APP_BASE_URL;
 
 const AdminPanel = () => {
   const [heading, setHeading] = useState("");
