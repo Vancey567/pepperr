@@ -19,7 +19,8 @@ app.use('/images', express.static('images'));
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "*",
     methods: "GET,POST,PUT,DELETE,PATCH,OPTIONS",
     credentials: true
 }));
@@ -29,6 +30,7 @@ app.use(express.json({limit: '8mb'}));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
+
 app.use("/admin", updateRoute);
 
 app.listen(PORT, () => {
